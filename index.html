@@ -8,9 +8,31 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="stylesheets/main.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
     </head>
     <body>
-        <p class="subtitle">Hello world</p>
+        <nav class="navbar is-fixed-top" role="navigation" arial-label="main navigation">
+            <div class="navbar-brand">
+                <a href="/" class="navbar-item">
+                    <img src="assets/images/logo.jpg" alt="Warri Tech Network Logo">
+                </a>
+                <a role="button" class="navbar-burger" arial-label="menu" aria-expanded="false" data-target="navMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div><!-- .navbar-brand ends here -->
+            <div class="navbar-menu" id="navMenu">
+                <div class="navbar-end">
+                    <a href="/community" class="navbar-item">Community</a>
+                    <a href="#partners" class="navbar-item">Partners</a>
+                    <a href="#events" class="navbar-item">Events</a>
+                    <a href="/community" class="navbar-item">Donate/Support</a>
+                    <a href="/community" class="navbar-item">Contact</a>
+                </div><!-- .navbar-end ends here -->
+            </div><!-- .navbar-menu ends here -->
+        </nav><!-- .navbar ends here -->
+        
         <!-- Below are the essential scripts for the website to be fully functional -->
         <script async src="js/vendor/particles.min.js"></script>
         <script async src="js/vendor/scrollreveal.min.js"></script>

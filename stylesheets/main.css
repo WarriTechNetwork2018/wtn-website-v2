@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*! bulma.io v0.7.1 | MIT License | github.com/jgthms/bulma */
+@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans");
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -6340,5 +6341,70 @@ label.panel-block {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
+
+::selection {
+  color: #f9f9f9;
+  background-color: #000f55; }
+
+.navbar {
+  font-family: 'Open Sans', sans-serif;
+  height: 100px;
+  padding-left: 36px;
+  padding-right: 36px !important; }
+
+a.navbar-item {
+  font-weight: 500;
+  font-size: 18px;
+  color: #04050f; }
+
+.navbar-end a.navbar-item {
+  margin-right: 1.5rem;
+  padding-bottom: 2px !important;
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+.navbar-end a.navbar-item:hover, .navbar-end a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+  color: #000f55 !important;
+  background: transparent; }
+
+.navbar-burger {
+  z-index: 30000; }
+
+@media screen and (max-width: 1087px) {
+  .navbar-menu {
+    background-color: #fff;
+    padding: 0.5rem 0;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.7;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    animation: fade-in 3s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0; }
+    50% {
+      opacity: 0.5; }
+    100% {
+      opacity: 1; } }
+  .navbar-end .navbar-item {
+    margin-bottom: 20px; } }
+.navbar-brand img {
+  max-width: 2.5em; }
+
+.navbar-burger span {
+  width: 20px;
+  height: 3px;
+  color: #000f55; }
+
+.navbar-burger:hover, .navbar-burger:active, .navbar-burger:link {
+  background-color: transparent; }
 
 /*# sourceMappingURL=main.css.map */
