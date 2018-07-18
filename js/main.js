@@ -23,3 +23,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
   });
+
+
+
+  // Scroll reveal
+  window.sr = ScrollReveal();
+  sr.reveal('.card', {
+    origin: 'top',
+    reset: true,
+    duration: 2000
+  },200)
+
+  sr.reveal('.hero-text', {
+    origin: 'left',
+    duration: 2000
+  },200)

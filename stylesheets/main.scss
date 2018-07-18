@@ -1,18 +1,17 @@
 @charset "utf-8";
 @import "vendor/bulma/bulma.scss";
-@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+@import "button.scss";
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto');
 // setting brand colors
 $primary-color: #000f55; // Biro blue
-$secondary-color: #f9f9f9; // Snow
-$complement-color: #5c6c63; // Granite gray
-$text-color: #04050f; // Rich black
-
+$text-color: #2d292a; // Rich black
+$button-bg: #2F61D3; 
 ::selection {
-    color: $secondary-color;
+    color: #fff;
     background-color: $primary-color;
 }
 .navbar {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Helvetica;
     height: 100px;
     padding-left: 36px;
     padding-right: 36px !important;  
@@ -32,7 +31,7 @@ a.navbar-item {
 }
 
 .navbar-end a.navbar-item:hover, .navbar-end a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
-    color: $primary-color !important;
+    color:$button-bg !important;
     background: transparent;
 }
 
@@ -52,38 +51,72 @@ a.navbar-item {
     left: 0;
     bottom: 0;
     right: 0;
-    opacity: 0.7;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 70px;
     margin-bottom: 20px;
-    animation: fade-in 3s;
+    animation: fade-in 1s;
     animation-direction: alternate;
     animation-timing-function: cubic-bezier(.165,.84,.44,1);
+    animation-fill-mode: forwards;
     
 }
 @keyframes fade-in {
-    0% {
+    from {
         opacity: 0;
     }
-    50% {
-        opacity: .5
-    }
-    100% {
-        opacity: 1
+    to {
+        opacity: 1;
+        
     }
 }
 .navbar-end .navbar-item {
     margin-bottom: 20px;
 }
 }
-.navbar-brand img {
-    max-width: 2.5em;
-}
+.navbar-item img {
+    max-height: 5.80rem;  
+}   
 .navbar-burger span {
-    width: 20px;
-    height: 3px;
+    width: 30px;
+    height: 2px;
     color: $primary-color;
+    margin-top: 27px;
 }
 .navbar-burger:hover, .navbar-burger:active, .navbar-burger:link {
     background-color: transparent;
+}
+main {
+    background: url("../assets/images/hero-background.jpg") $primary-color;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 100vh;
+    margin-top: 100px !important;
+    box-shadow: inset 0 0 0 1000px rgba(0,15,85, 0.97) /* Trick for the semi transparent background */
+}
+main .title {
+    font-family: 'Roboto' sans-serif;
+    font-size: 72px;
+    line-height: 72px !important;
+    font-weight: 300px !important;
+    margin-bottom: 3rem !important;  
+} 
+
+.navbar-burger span:nth-child(2) {
+    top: calc(20% - 1px);
+} 
+.hero.is-large .hero-body {
+    padding-top: 7rem;    
+}
+.summary-text {
+    font-family: 'Roboto';
+    line-height: 39px;  
+    font-weight: 300;
+
+}
+.hero .card {
+    border-radius: .25rem;
+    -webkit-box-shadow: -2px 27px 77px 2px rgba(13,13,13,1);
+    -moz-box-shadow: -2px 27px 77px 2px rgba(13,13,13,1);
+    box-shadow: -2px 27px 77px 2px rgba(13,13,13,1);
 }

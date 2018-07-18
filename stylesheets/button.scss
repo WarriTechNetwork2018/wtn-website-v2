@@ -1,0 +1,19 @@
+$primary-color: #000f55;
+/* This is where the magic starts */
+.udacity-btn {
+    color: #ffffff;
+    padding: 20px 60px;
+    background-color: #2F61D3;
+    border-color: transparent;
+    border-radius: .25rem;
+    box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.udacity-btn:focus, .udacity-btn:hover {
+    color: #ffffff;
+    outline: 0;
+    background-color: $primary-color;
+    box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+}
