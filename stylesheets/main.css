@@ -6460,4 +6460,32 @@ main .title {
   -moz-box-shadow: -2px 27px 77px 2px #0d0d0d;
   box-shadow: -2px 27px 77px 2px #0d0d0d; }
 
+.icon-wrapper {
+  border-radius: 50%;
+  width: 100%;
+  color: #000f55;
+  font-size: 150px !important;
+  opacity: 0.7; }
+
+.what-we-do {
+  padding: 2rem; }
+
+.what-we-do .card {
+  border-radius: .25rem;
+  padding: 2rem; }
+
+.what-we-do h2 {
+  color: #2d292a !important; }
+
+.section p {
+  font-family: Helvetica;
+  font-size: 16px !important;
+  line-height: 34px;
+  color: #3f4245;
+  text-align: justify; }
+
+section {
+  padding-top: 6rem !important;
+  background: #f9f9f9; }
+
 /*# sourceMappingURL=main.css.map */
