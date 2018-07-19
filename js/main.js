@@ -27,10 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // Scroll reveal
-  window.sr = ScrollReveal();
+  window.sr = ScrollReveal({reset: true});
   sr.reveal('.card', {
     origin: 'top',
-    reset: true,
     duration: 2000
   },200)
 
@@ -38,3 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
     origin: 'left',
     duration: 2000
   },400)
+
+  sr.reveal('#whatWeDo', { 
+    origin: 'right',
+    duration: 2000
+  });
