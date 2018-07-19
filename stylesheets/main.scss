@@ -3,6 +3,9 @@
 @import "button.scss";
 @import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto');
 // setting brand colors
+html, body {
+    height: 100%;
+}
 $primary-color: #000f55; // Biro blue
 $text-color: #2d292a; // Rich black
 $button-bg: #2F61D3; 
@@ -155,4 +158,33 @@ main .title {
 section {
     padding-top: 6rem !important;
     background: #f9f9f9;
+}
+footer {
+    height: 300px;
+}
+.fake-footer {
+    width: 1px;
+}
+footer {
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+    background-color: #333 !important;
+    padding: 40px 32px 45px;
+    clear: both;
+}
+.menu-list {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px !important;;
+}
+.menu-list a {
+    color: #bbbbbb !important;
+    transition: all 500ms;
+}
+.menu-list a:hover {
+    background-color: transparent !important;
+    color: #fff !important;
 }
