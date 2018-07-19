@@ -37,4 +37,4 @@ document.addEventListener('DOMContentLoaded', () => {
   sr.reveal('.hero-text', {
     origin: 'left',
     duration: 2000
-  },200)
+  },400)
