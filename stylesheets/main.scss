@@ -188,3 +188,9 @@ footer {
     background-color: transparent !important;
     color: #fff !important;
 }
+section.partners {
+    -webkit-box-shadow: 0px 17px 11px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 17px 11px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 17px 11px -1px rgba(0,0,0,0.75);
+    padding-top: 2rem !important;  
+}

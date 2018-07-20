@@ -38,7 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
     duration: 2000
   },400)
 
-  sr.reveal('#whatWeDo', { 
+  sr.reveal('.what-we-do', { 
     origin: 'right',
     duration: 2000
   });
+
+
+  // slick
+ 
