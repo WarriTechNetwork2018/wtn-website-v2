@@ -6359,6 +6359,9 @@ label.panel-block {
   background-color: #000f55;
   box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, 0.2); }
 
+@media screen and (max-width: 767px) {
+  .udacity-btn {
+    padding: 10px 20px; } }
 html, body {
   height: 100%; }
 
@@ -6525,5 +6528,45 @@ section.partners {
   -moz-box-shadow: 0px 17px 11px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 17px 11px -1px rgba(0, 0, 0, 0.75);
   padding-top: 2rem !important; }
+
+@media screen and (max-width: 767px) {
+  .fake-footer, footer {
+    height: 615px !important; }
+
+  main .title {
+    font-family: 'Roboto' sans-serif;
+    font-size: 36px;
+    line-height: 36px !important;
+    font-weight: 150px !important;
+    margin-bottom: 3rem !important; }
+
+  .summary-text {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300; }
+
+  .hero.is-large .hero-body {
+    padding-top: 2.5rem; }
+
+  .hero .card {
+    box-shadow: none; }
+
+  .hero .card .is-flexible-mobile {
+    padding: inherit; }
+
+  .hero .card a:first-child {
+    margin-right: .2rem; }
+
+  .what-we-do {
+    padding: 1rem; }
+
+  .icon-wrapper {
+    font-size: 75px !important;
+    opacity: 0.7; } }
+.button.is-info {
+  background-color: #000f55; }
+  .button.is-info:hover {
+    background-color: #000f55; }
 
 /*# sourceMappingURL=main.css.map */

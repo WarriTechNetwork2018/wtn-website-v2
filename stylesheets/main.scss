@@ -194,3 +194,50 @@ section.partners {
     box-shadow: 0px 17px 11px -1px rgba(0,0,0,0.75);
     padding-top: 2rem !important;  
 }
+
+@media screen and (max-width: 767px) {
+    .fake-footer, footer {
+        height: 615px !important
+    }
+    main .title {
+        font-family: 'Roboto' sans-serif;
+        font-size: 36px;
+        line-height: 36px !important;
+        font-weight: 150px !important;
+        margin-bottom: 3rem !important;  
+    }
+    .summary-text {
+        font-family: 'Roboto';
+        font-size: 16px;
+        line-height: 25px;  
+        font-weight: 300;
+    
+    } 
+    .hero.is-large .hero-body {
+        padding-top: 2.5rem;      
+    }
+    .hero .card {
+        box-shadow: none;
+    }
+
+    .hero .card .is-flexible-mobile {
+        padding: inherit
+    }
+    .hero .card a:first-child {
+        margin-right: .2rem;
+    }
+    .what-we-do {
+        padding: 1rem;
+    }
+    .icon-wrapper { 
+        font-size: 75px !important;
+        opacity: 0.7; 
+    }
+}
+
+.button.is-info {
+    background-color: $primary-color;
+    &:hover {
+        background-color: $primary-color;
+    }
+}

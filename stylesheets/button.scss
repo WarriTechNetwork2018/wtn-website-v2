@@ -17,3 +17,9 @@ $primary-color: #000f55;
     background-color: $primary-color;
     box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
 }
+@media  screen and  (max-width: 767px) {
+    .udacity-btn {
+        padding: 10px 20px;
+
+    }
+}
